@@ -1,0 +1,46 @@
+// variables
+@import './variables';
+@mixin theme($theme: $secondColor){
+    background: $theme;
+    color: #000;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 2rem;
+    background-color: $primaryColor;
+
+    // nesting
+    a{
+        color: $lightColor;
+        padding: 1rem;
+    }
+}
+
+.steps{
+    text-align: left;
+    font-size: large;
+
+    // nesting
+    h3{
+        color: $secondColor;
+    }
+    
+    strong{
+        color: $primaryColor;
+    }
+
+    .features{
+        display: flex;
+        
+        .feature{
+            width: 50%;
+            &:hover{
+                background-color: $ascendColor;
+            }
+        }
+        @include theme($theme: $lightColor);
+    }
+}
+

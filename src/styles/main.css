@@ -1,0 +1,31 @@
+.navbar {
+  width: 100%;
+  height: 2rem;
+  background-color: #3085C3;
+}
+.navbar a {
+  color: #D2E0FB;
+  padding: 1rem;
+}
+
+.steps {
+  text-align: left;
+  font-size: large;
+}
+.steps h3 {
+  color: #B931FC;
+}
+.steps strong {
+  color: #3085C3;
+}
+.steps .features {
+  display: flex;
+  background: #D2E0FB;
+  color: #000;
+}
+.steps .features .feature {
+  width: 50%;
+}
+.steps .features .feature:hover {
+  background-color: #D988B9;
+}
